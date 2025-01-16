@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="images/Spotify_Primary_Logo.png" type="image/webp" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />  
+  </head>
+  <body>
+    <!-- <img src="logo.svg" alt=""> -->
+    <div class="container flex bg-black">
+      <div class="left bg-black">
+        <div class="close">
+          <img  class="invert"src="close.svg" alt="">
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo m-1">
+            <img class="invert" src="logo.svg" alt="logo" />
+          </div>
+          <ul>
+            <li>
+              <img class="invert" src="home_logo.svg" alt="Home" />
+              Home
+            </li>
+            <li>
+              <img class="invert" src="search.svg" alt="Search" />
+              Search
+            </li>
+          </ul>
+        </div>
+        <div class="Library bg-grey rounded m-1 p-1 flex">
+          <div class="div_inside_library">
+            <div class="heading">
+              <img class="invert" src="playlist.svg" alt="playlist" />
+              <h3>Your Library</h3>
+              <!-- <img class="cursor" src="plus.svg" alt="plus sign" />    -->
+            </div>
+            <div class="songlist">
+              <ul></ul>
+            </div>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header space-between">
+          <div class="nav">
+            <div class="hamburgerContainer  ">
+                <img width="40" class="invert hamburger" src="hamburger.svg" alt="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer">
+            <div data-folder="Happy_Hits" class="card">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/happy_hits.jpg" alt="Happy Hits!" />
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness!</p>
+            </div>
+            <div class="card" data-folder="Claming_Acoustic">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/Claming_Acoustic.jpg" alt="Calming Acoustic" />
+              <h2>Calming Acoustic</h2>
+              <p>Keep calm with instrumental acoustic tracks</p>
+            </div>
+            <div class="card"data-folder="lofi_Chill" >
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/lofi chill.jpg" alt="lofi_Chill" />
+              <h2>Lofi Chill</h2>
+              <p>Lazy slow lofi beats for laid-back moments.</p>
+            </div>
+            <div class="card"data-folder="viral_Hits">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/viral_hits.jpg" alt="viral_Hits" />
+              <h2>Viral Hits</h2>
+              <p>Viral, trending and taking off</p>
+            </div>
+            <div class="card" data-folder="lounge_soft_House">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/lounge_music.jpg" alt="lounge_soft_House" />
+              <h2>Lounge Soft House</h2>
+              <p>Soft house music for your laidback moments.</p>
+            </div>
+            <div class="card"data-folder="Cozy_Christmas">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img
+                src="images/Cozy_christmas_Jazz.jpg"
+                alt="Calming Acoustic"
+              />
+              <h2>Cozy christmas Jazz</h2>
+              <p>
+                Warm instrumental versions of your favorite Christmas songs.
+              </p>
+            </div>
+            <div class="card" data-folder="Atif_Aslam">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/aatif_aslam.jpg" alt="Atif Aslam" />
+              <h2>Atif Aslam</h2>
+              <p>
+                All Atif's Best Tracks | Regularly Updated | Play on Shuffle 🔀
+              </p>
+            </div>
+            <div class="card" data-folder="Arjit_Singh" >
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/arjit_singh.jpg" alt="Arijit Singh " />
+              <h2>Arijit Singh</h2>
+              <p>Bollywood crooner's essential songs.</p>
+            </div>
+            <div class="card" data-folder="kumar_Sanu">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/kumar_sanu.jpg" alt="kumar Sanu" />
+              <h2>Kumar Sanu</h2>
+              <p>The Greatest Singer Dada kishore Kumar</p>
+            </div>
+            <div class="card"data-folder="Neha_Kakkar">
+              <div class="play">
+                <img src="pausebtn.svg" alt="Play" />
+              </div>
+              <img src="images/neha_kakker.jpg" alt="Neha Kakkar" />
+              <h2>Neha Kakkar</h2>
+              <p>The Greatest Singer Neha Kakkar-female</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="progress"></div>
+              <div class="circle"></div>
+            </div>
+            <div class="abovebar">
+              <div class="songinfo">
+              </div>
+              <div class="songbuttons">
+                <img width="35" id="previous" src="prevsong.svg" alt="previous song" />
+                <img width="35" id="playbtn" src="play.svg" alt="play button" />
+                <img width="35" id="next" src="nextsong.svg" alt="next song" />
+              </div>
+              <div class="songtime">
+
+              </div>
+              <div class="timevol">
+                <div class="volume">
+                  <img width="25" src="volume.svg" alt="">
+                  <div class="range">
+                      <input type="range" name="volume" id="">
+                  </div>
+              </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
